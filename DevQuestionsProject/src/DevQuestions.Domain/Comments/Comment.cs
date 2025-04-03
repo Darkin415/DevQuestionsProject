@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace DevQuestions.Domain.Comments
 {
-    internal class Comment
+    public class Comment
     {
+        public Guid Id { get; set; }
+        public required Guid UserId { get; set; }
+        public Comment? Parent { get; set; }
+        public Guid EntityId { get; set; }
+        public required string EntityType { get; set; }
+
+        public List<Comment> Children { get; set; } = [];
+
     }
 }
