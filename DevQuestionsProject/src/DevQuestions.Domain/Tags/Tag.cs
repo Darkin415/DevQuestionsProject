@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace DevQuestions.Domain.Tags
 {
-    internal class Tag
+    public class Tag
     {
+        public Guid Id { get; set; }
+        public string Name { get; set; }
+        public required string Description { get; set; }
+
     }
 }

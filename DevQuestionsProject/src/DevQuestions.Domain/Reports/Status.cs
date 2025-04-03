@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DevQuestions.Domain.Reports
+﻿namespace DevQuestions.Domain.Reports
 {
-    internal class Status
+    public enum Status
     {
+        Open,
+        Resolved,
+        InProgress,
+        Dismissed
     }
 }
