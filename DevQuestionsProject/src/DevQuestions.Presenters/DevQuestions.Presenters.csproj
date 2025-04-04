@@ -8,8 +8,15 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.3.0" />
-    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="8.1.0" />
-    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="8.1.0" />
+    
+      
+      
+    
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\DevQuestion.Contracts\DevQuestion.Contracts.csproj" />
+    <ProjectReference Include="..\DevQuestions.Domain\DevQuestions.Domain.csproj" />
   </ItemGroup>
 
 </Project>

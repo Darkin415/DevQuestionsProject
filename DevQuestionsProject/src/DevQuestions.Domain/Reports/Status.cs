@@ -5,6 +5,6 @@
         Open,
         Resolved,
         InProgress,
-        Dismissed
+        Dismissed,
     }
 }
