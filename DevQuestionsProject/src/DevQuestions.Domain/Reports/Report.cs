@@ -15,7 +15,7 @@ namespace DevQuestions.Domain.Reports
         public required Guid ReportedUserId { get; set; }
         public Guid? ScreenShotId { get; set; }
         public required string Reason { get; set; }
-        public Status Status { get; set; } = Status.Open;
+        public ReportStatus Status { get; set; } = Status.Open;
         public DateTime CreateAt { get; set; }
         public DateTime? UpdatedAt { get; set; }
 

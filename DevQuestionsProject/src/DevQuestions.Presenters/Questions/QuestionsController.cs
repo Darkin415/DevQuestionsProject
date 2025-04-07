@@ -1,11 +1,16 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using DevQuestion.Contracts;
-namespace DevQuestions.Controllers
+using DevQuestion.Contracts.Questions;
+using DevQuestions.Application.Questions;
+namespace DevQuestions.Presenters.Questions
 {
     [ApiController]
     [Route("[controller]")]
     public partial class QuestionsController : ControllerBase
     {
+        public QuestionsController(IQuestionsService)
+        {
+
+        }
 
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] CreateQuestionDto request, CancellationToken cancellationToken)
